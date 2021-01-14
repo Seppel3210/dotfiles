@@ -61,6 +61,15 @@ input 1:1:AT_Translated_Set_2_keyboard {
 #
 # Basics:
 #
+    # Some XF86 keybindings
+    bindsym XF86MonBrightnessUp exec /home/sebastian/devel/scripts/brightness +5
+    bindsym XF86MonBrightnessDown exec /home/sebastian/devel/scripts/brightness -5
+    bindsym XF86AudioRaiseVolume exec amixer set Master 1%+
+    bindsym XF86AudioLowerVolume exec amixer set Master 1%-
+    bindsym shift+XF86AudioRaiseVolume exec amixer set Master 5%+
+    bindsym shift+XF86AudioLowerVolume exec amixer set Master 5%-
+    bindsym XF86AudioMute exec amixer set Master toggle
+
     # Take screenshot 
     bindsym Print exec grim -t jpeg ~/Downloads/screen$(date +%Y-%m-%d_%H-%M-%S).jpg
     # Take screenshot with region selection
@@ -221,7 +230,7 @@ bar {
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # Current date and time and battery capacity
-    status_command while echo "$(cat /sys/class/power_supply/BAT0/capacity)%    $(date +'%Y-%m-%d %H:%M:%S')"; do sleep 1; done
+    status_command while echo "$(cat /sys/class/power_supply/BAT0/capacity)% \| $(date +'%Y-%m-%d %H:%M:%S')"; do sleep 1; done
 
     colors {
         statusline #ffffff
