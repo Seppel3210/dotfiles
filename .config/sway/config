@@ -61,6 +61,10 @@ input 1:1:AT_Translated_Set_2_keyboard {
 #
 # Basics:
 #
+    # Take screenshot 
+    bindsym Print exec grim -t jpeg ~/Downloads/screen$(date +%Y-%m-%d_%H-%M-%S).jpg
+    # Take screenshot with region selection
+    bindsym $mod+Print exec grim -t jpeg -g "$(slurp)" ~/Downloads/screen$(date +%Y-%m-%d_%H-%M-%S).jpg
     # Start a terminal
     bindsym $mod+Return exec $term
 
