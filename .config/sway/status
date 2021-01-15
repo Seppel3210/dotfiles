@@ -1,0 +1,7 @@
+#!/bin/sh
+bat="/sys/class/power_supply/BAT0"
+bat_charge=$(cat $bat/capacity)
+bat_status=$(cat $bat/status)
+[ $bat_status = 'Charging' ] && bat_info='⚡'
+date=$(date +'%Y-%m-%d %H:%M:%S')
+echo "$bat_charge% $bat_info | $date"
