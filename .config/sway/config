@@ -70,10 +70,11 @@ input 1:1:AT_Translated_Set_2_keyboard {
     bindsym shift+XF86AudioLowerVolume exec amixer set Master 5%-
     bindsym XF86AudioMute exec amixer set Master toggle
 
+    set $screen_dir ~/Pictures/screenshots
     # Take screenshot 
-    bindsym Print exec grim -t jpeg ~/Downloads/screen$(date +%Y-%m-%d_%H-%M-%S).jpg
+    bindsym Print exec grim -t jpeg $screen_dir/$(date +%Y-%m-%d_%H-%M-%S).jpg
     # Take screenshot with region selection
-    bindsym $mod+Print exec grim -t jpeg -g "$(slurp)" ~/Downloads/screen$(date +%Y-%m-%d_%H-%M-%S).jpg
+    bindsym $mod+Print exec grim -t jpeg -g "$(slurp)" $screen_dir/$(date +%Y-%m-%d_%H-%M-%S).jpg
     # Start a terminal
     bindsym $mod+Return exec $term
 
