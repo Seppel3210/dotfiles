@@ -1,3 +1,5 @@
+source "~/.config/mutt/gpg.rc"
+
 set ssl_force_tls = yes
 #set abort_nosubject = no
 set mail_check = 60
@@ -6,4 +8,4 @@ set sort = "reverse-date-received"
 set signature = "~/.mutt/signature"
 set copy = no
 
-source "gpg2 -dq ~/.config/mutt/gmail.gpg |"
+source "gpg -dq ~/.config/mutt/gmail.gpg |"
