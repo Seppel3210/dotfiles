@@ -13,5 +13,6 @@ set -o vi
 
 eval "$(thefuck --alias)"
 
+export EDITOR="nvim"
 export PATH=$PATH:"$HOME/.cargo/bin"
 alias .files='/usr/bin/git --git-dir=/home/sebastian/.dotfiles/ --work-tree=/home/sebastian'
