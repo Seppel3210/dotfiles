@@ -15,4 +15,4 @@ eval "$(thefuck --alias)"
 
 export EDITOR="nvim"
 export PATH=$PATH:"$HOME/.cargo/bin"
-alias .files='/usr/bin/git --git-dir=/home/sebastian/.dotfiles/ --work-tree=/home/sebastian'
+alias .files='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
