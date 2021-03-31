@@ -1,3 +1,3 @@
-setxkbmap de neo
+setxkbmap de bone
 xsetroot -solid gray &
 exec bspwm
