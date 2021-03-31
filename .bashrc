@@ -12,7 +12,9 @@
 set -o vi
 
 eval "$(thefuck --alias)"
+eval "$(starship init bash)"
 
 export EDITOR="nvim"
-export PATH=$PATH:"$HOME/.cargo/bin"
+export BROWSER="qutebrowser"
+export PATH=$PATH:"$HOME/.cargo/bin:$HOME/.local/bin"
 alias .files='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
