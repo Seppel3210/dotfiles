@@ -37,7 +37,7 @@ XF86AudioMute
 #
 
 # quit/restart bspwm
-super + alt + {q,r}
+super + shift + alt + {q,ß}
 	bspc {quit,wm -r}
 
 # close and kill

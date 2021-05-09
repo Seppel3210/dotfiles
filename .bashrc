@@ -16,5 +16,5 @@ eval "$(starship init bash)"
 
 export EDITOR="nvim"
 export BROWSER="qutebrowser"
-export PATH=$PATH:"$HOME/.cargo/bin:$HOME/.local/bin"
+export PATH="$HOME/.cargo/bin:$HOME/.local/bin":$PATH
 alias .files='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
