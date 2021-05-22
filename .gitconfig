@@ -1,15 +1,18 @@
 [user]
-	email = seppel3210@gmail.com
-	name = Sebastian Widua
+    email = seppel3210@gmail.com
+    name = Sebastian Widua
 [core]
-	editor = nvim
+    editor = nvim
     pager = delta
 
 [interactive]
     diffFilter = delta --color-only
 
+[diff]
+    colorMoved = default
+
 [delta]
-    features = side-by-side line-numbers decorations
+    features = line-numbers decorations
     whitespace-error-style = 22 reverse
 
 [delta "decorations"]
