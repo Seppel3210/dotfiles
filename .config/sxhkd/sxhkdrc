@@ -10,7 +10,7 @@ XF86MonBrightnessDown
 
 # terminal emulator
 super + Return
-	alacritty
+	alacritty -e fish
 
 # program launcher
 super + @space
