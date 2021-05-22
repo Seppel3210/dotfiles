@@ -15,7 +15,7 @@ eval "$(thefuck --alias)"
 eval "$(starship init bash)"
 eval "$(gh completion -s bash)"
 
-export EDITOR="nvim"
-export BROWSER="qutebrowser"
+export EDITOR="/usr/bin/nvim"
+export BROWSER="/usr/bin/qutebrowser"
 export PATH="$HOME/.cargo/bin:$HOME/.local/bin":$PATH
 alias .files='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
