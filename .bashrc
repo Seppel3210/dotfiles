@@ -13,6 +13,7 @@ set -o vi
 
 eval "$(thefuck --alias)"
 eval "$(starship init bash)"
+eval "$(gh completion -s bash)"
 
 export EDITOR="nvim"
 export BROWSER="qutebrowser"
